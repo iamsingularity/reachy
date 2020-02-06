@@ -1,0 +1,48 @@
+:mod:`reachy.parts`
+===================
+
+.. py:module:: reachy.parts
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   arm/index.rst
+   hand/index.rst
+   head/index.rst
+   kinematic/index.rst
+   motor/index.rst
+   part/index.rst
+
+
+Package Contents
+----------------
+
+.. py:class:: LeftArm(luos_port, hand=None)
+
+   Bases: :class:`reachy.parts.arm.Arm`
+
+   .. attribute:: dxl_motors
+      
+
+      
+
+
+.. py:class:: RightArm(luos_port, hand=None)
+
+   Bases: :class:`reachy.parts.arm.Arm`
+
+   .. attribute:: dxl_motors
+      
+
+      
+
+
+.. py:class:: Head(*args, **kwargs)
+
+   Bases: :class:`object`
+
+

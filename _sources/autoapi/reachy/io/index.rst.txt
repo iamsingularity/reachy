@@ -1,0 +1,54 @@
+:mod:`reachy.io`
+================
+
+.. py:module:: reachy.io
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   luos/index.rst
+
+
+Package Contents
+----------------
+
+.. py:class:: SharedLuosIO(luos_port)
+
+   Bases: :class:`object`
+
+   .. attribute:: opened_io
+      
+
+      
+
+   .. method:: with_gate(cls, name, port_template)
+      :classmethod:
+
+
+
+   .. method:: gate_name(self)
+      :property:
+
+
+
+   .. method:: close(self)
+
+
+
+   .. method:: find_module(self, module_name)
+
+
+
+   .. method:: find_dxl(self, dxl_id)
+
+
+
+   .. method:: find_orbital_disks(self)
+
+
+
+

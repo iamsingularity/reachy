@@ -1,0 +1,61 @@
+:mod:`reachy.trajectory.interpolation`
+======================================
+
+.. py:module:: reachy.trajectory.interpolation
+
+
+Module Contents
+---------------
+
+.. py:class:: TrajectoryInterpolation(initial_position, goal_position, duration)
+
+   Bases: :class:`object`
+
+   .. method:: interpolate(self, t)
+      :abstractmethod:
+
+
+
+   .. method:: start(self, motor, update_freq=100)
+
+
+
+   .. method:: stop(self)
+
+
+
+   .. method:: wait(self)
+
+
+
+   .. method:: _follow_traj_loop(self, motor, update_freq)
+
+
+
+
+.. py:class:: Linear
+
+   Bases: :class:`reachy.trajectory.interpolation.TrajectoryInterpolation`
+
+   .. method:: interpolate(self, t)
+
+
+
+
+.. py:class:: MinimumJerk(initial_position, goal_position, duration, initial_velocity=0, final_velocity=0, initial_acceleration=0, final_acceleration=0)
+
+   Bases: :class:`reachy.trajectory.interpolation.TrajectoryInterpolation`
+
+   .. method:: interpolate(self, t)
+
+
+
+
+.. function:: cubic_smooth(traj, nb_kp, out_points=-1)
+
+
+.. data:: interpolation_modes
+   
+
+   
+

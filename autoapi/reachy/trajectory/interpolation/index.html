@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>reachy.trajectory.interpolation &#8212; reachy v1.0.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="reachy.trajectory.mixer" href="../mixer/index.html" />
+    <link rel="prev" title="reachy.trajectory" href="../index.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-reachy.trajectory.interpolation">
+<span id="reachy-trajectory-interpolation"></span><h1><a class="reference internal" href="#module-reachy.trajectory.interpolation" title="reachy.trajectory.interpolation"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.trajectory.interpolation</span></code></a><a class="headerlink" href="#module-reachy.trajectory.interpolation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reachy.trajectory.interpolation.TrajectoryInterpolation">
+<em class="property">class </em><code class="sig-prename descclassname">reachy.trajectory.interpolation.</code><code class="sig-name descname">TrajectoryInterpolation</code><span class="sig-paren">(</span><em class="sig-param">initial_position</em>, <em class="sig-param">goal_position</em>, <em class="sig-param">duration</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.TrajectoryInterpolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="reachy.trajectory.interpolation.TrajectoryInterpolation.interpolate">
+<em class="property">abstract </em><code class="sig-name descname">interpolate</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.TrajectoryInterpolation.interpolate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.trajectory.interpolation.TrajectoryInterpolation.start">
+<code class="sig-name descname">start</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">motor</em>, <em class="sig-param">update_freq=100</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.TrajectoryInterpolation.start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.trajectory.interpolation.TrajectoryInterpolation.stop">
+<code class="sig-name descname">stop</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.TrajectoryInterpolation.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.trajectory.interpolation.TrajectoryInterpolation.wait">
+<code class="sig-name descname">wait</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.TrajectoryInterpolation.wait" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.trajectory.interpolation.TrajectoryInterpolation._follow_traj_loop">
+<code class="sig-name descname">_follow_traj_loop</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">motor</em>, <em class="sig-param">update_freq</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.TrajectoryInterpolation._follow_traj_loop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reachy.trajectory.interpolation.Linear">
+<em class="property">class </em><code class="sig-prename descclassname">reachy.trajectory.interpolation.</code><code class="sig-name descname">Linear</code><a class="headerlink" href="#reachy.trajectory.interpolation.Linear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reachy.trajectory.interpolation.TrajectoryInterpolation" title="reachy.trajectory.interpolation.TrajectoryInterpolation"><code class="xref py py-class docutils literal notranslate"><span class="pre">reachy.trajectory.interpolation.TrajectoryInterpolation</span></code></a></p>
+<dl class="method">
+<dt id="reachy.trajectory.interpolation.Linear.interpolate">
+<code class="sig-name descname">interpolate</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.Linear.interpolate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reachy.trajectory.interpolation.MinimumJerk">
+<em class="property">class </em><code class="sig-prename descclassname">reachy.trajectory.interpolation.</code><code class="sig-name descname">MinimumJerk</code><span class="sig-paren">(</span><em class="sig-param">initial_position</em>, <em class="sig-param">goal_position</em>, <em class="sig-param">duration</em>, <em class="sig-param">initial_velocity=0</em>, <em class="sig-param">final_velocity=0</em>, <em class="sig-param">initial_acceleration=0</em>, <em class="sig-param">final_acceleration=0</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.MinimumJerk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reachy.trajectory.interpolation.TrajectoryInterpolation" title="reachy.trajectory.interpolation.TrajectoryInterpolation"><code class="xref py py-class docutils literal notranslate"><span class="pre">reachy.trajectory.interpolation.TrajectoryInterpolation</span></code></a></p>
+<dl class="method">
+<dt id="reachy.trajectory.interpolation.MinimumJerk.interpolate">
+<code class="sig-name descname">interpolate</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.MinimumJerk.interpolate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="reachy.trajectory.interpolation.cubic_smooth">
+<code class="sig-prename descclassname">reachy.trajectory.interpolation.</code><code class="sig-name descname">cubic_smooth</code><span class="sig-paren">(</span><em class="sig-param">traj</em>, <em class="sig-param">nb_kp</em>, <em class="sig-param">out_points=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.trajectory.interpolation.cubic_smooth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="reachy.trajectory.interpolation.interpolation_modes">
+<code class="sig-prename descclassname">reachy.trajectory.interpolation.</code><code class="sig-name descname">interpolation_modes</code><a class="headerlink" href="#reachy.trajectory.interpolation.interpolation_modes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">reachy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy</span></code></a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../io/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.io</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../parts/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.parts</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.trajectory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../utils/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.utils</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#package-contents">Package Contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy</span></code></a><ul>
+  <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.trajectory</span></code></a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.trajectory</span></code></a></li>
+      <li>Next: <a href="../mixer/index.html" title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.trajectory.mixer</span></code></a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pollen Robotics.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../_sources/autoapi/reachy/trajectory/interpolation/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

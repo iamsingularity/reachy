@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>reachy.parts.hand &#8212; reachy v1.0.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="reachy.parts.head" href="../head/index.html" />
+    <link rel="prev" title="reachy.parts.arm" href="../arm/index.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-reachy.parts.hand">
+<span id="reachy-parts-hand"></span><h1><a class="reference internal" href="#module-reachy.parts.hand" title="reachy.parts.hand"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.parts.hand</span></code></a><a class="headerlink" href="#module-reachy.parts.hand" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="reachy.parts.hand.rot">
+<code class="sig-prename descclassname">reachy.parts.hand.</code><code class="sig-name descname">rot</code><span class="sig-paren">(</span><em class="sig-param">axis</em>, <em class="sig-param">deg</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.rot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="reachy.parts.hand.Hand">
+<em class="property">class </em><code class="sig-prename descclassname">reachy.parts.hand.</code><code class="sig-name descname">Hand</code><span class="sig-paren">(</span><em class="sig-param">side</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.Hand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../part/index.html#reachy.parts.part.ReachyPart" title="reachy.parts.part.ReachyPart"><code class="xref py py-class docutils literal notranslate"><span class="pre">reachy.parts.part.ReachyPart</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="reachy.parts.hand.ForceGripper">
+<em class="property">class </em><code class="sig-prename descclassname">reachy.parts.hand.</code><code class="sig-name descname">ForceGripper</code><span class="sig-paren">(</span><em class="sig-param">luos_port</em>, <em class="sig-param">side</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.ForceGripper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reachy.parts.hand.Hand" title="reachy.parts.hand.Hand"><code class="xref py py-class docutils literal notranslate"><span class="pre">reachy.parts.hand.Hand</span></code></a></p>
+<dl class="attribute">
+<dt id="reachy.parts.hand.ForceGripper.dxl_motors">
+<code class="sig-name descname">dxl_motors</code><a class="headerlink" href="#reachy.parts.hand.ForceGripper.dxl_motors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.parts.hand.ForceGripper.open">
+<code class="sig-name descname">open</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">end_pos=-30</em>, <em class="sig-param">duration=1</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.ForceGripper.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.parts.hand.ForceGripper.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">end_pos=30</em>, <em class="sig-param">duration=1</em>, <em class="sig-param">target_grip_force=100</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.ForceGripper.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.parts.hand.ForceGripper.grip_force">
+<em class="property">property </em><code class="sig-name descname">grip_force</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.ForceGripper.grip_force" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reachy.parts.hand.OrbitaWrist">
+<em class="property">class </em><code class="sig-prename descclassname">reachy.parts.hand.</code><code class="sig-name descname">OrbitaWrist</code><span class="sig-paren">(</span><em class="sig-param">luos_port</em>, <em class="sig-param">side</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.OrbitaWrist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reachy.parts.hand.Hand" title="reachy.parts.hand.Hand"><code class="xref py py-class docutils literal notranslate"><span class="pre">reachy.parts.hand.Hand</span></code></a></p>
+<dl class="attribute">
+<dt id="reachy.parts.hand.OrbitaWrist.dxl_motors">
+<code class="sig-name descname">dxl_motors</code><a class="headerlink" href="#reachy.parts.hand.OrbitaWrist.dxl_motors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="reachy.parts.hand.OrbitaWrist.orbita_config">
+<code class="sig-name descname">orbita_config</code><a class="headerlink" href="#reachy.parts.hand.OrbitaWrist.orbita_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reachy.parts.hand.OrbitaWrist.homing">
+<code class="sig-name descname">homing</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#reachy.parts.hand.OrbitaWrist.homing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">reachy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy</span></code></a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../io/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.io</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.parts</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../trajectory/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.trajectory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../utils/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.utils</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#package-contents">Package Contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy</span></code></a><ul>
+  <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.parts</span></code></a><ul>
+      <li>Previous: <a href="../arm/index.html" title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.parts.arm</span></code></a></li>
+      <li>Next: <a href="../head/index.html" title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reachy.parts.head</span></code></a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pollen Robotics.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../_sources/autoapi/reachy/parts/hand/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,60 @@
+:mod:`reachy.trajectory`
+========================
+
+.. py:module:: reachy.trajectory
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   interpolation/index.rst
+   mixer/index.rst
+   player/index.rst
+   recorder/index.rst
+
+
+Package Contents
+----------------
+
+.. py:class:: TrajectoryRecorder(motors, position_field='present_position', freq=100)
+
+   Bases: :class:`object`
+
+   .. method:: start(self, turn_compliant=False)
+
+
+
+   .. method:: stop(self, turn_stiff=False)
+
+
+
+   .. method:: trajectories(self)
+      :property:
+
+
+
+   .. method:: _record_loop(self)
+
+
+
+
+.. py:class:: TrajectoryPlayer(reachy, trajectories, freq=100)
+
+   Bases: :class:`object`
+
+   .. method:: play(self, wait=False, fade_in_duration=0)
+
+
+
+   .. method:: wait_for_end(self)
+
+
+
+   .. method:: _play_loop(self)
+
+
+
+

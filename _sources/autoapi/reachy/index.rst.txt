@@ -1,0 +1,96 @@
+:mod:`reachy`
+=============
+
+.. py:module:: reachy
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   io/index.rst
+   parts/index.rst
+   trajectory/index.rst
+   utils/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   _version/index.rst
+   reachy/index.rst
+
+
+Package Contents
+----------------
+
+.. data:: __version__
+   :annotation: = 1.0.0a1
+
+   
+
+.. py:class:: Reachy(left_arm=None, right_arm=None, head=None)
+
+   Bases: :class:`object`
+
+   .. method:: close(self)
+
+
+
+   .. method:: parts(self)
+      :property:
+
+
+
+   .. method:: motors(self)
+      :property:
+
+
+
+   .. method:: goto(self, goal_positions, duration, starting_point='present_position', wait=False, interpolation_mode='linear')
+
+
+
+   .. method:: need_cooldown(self, temperature_limit=50)
+
+
+      Check if Reachy needs to cool down.
+
+      Parameters
+      ----------
+      temperature_limit : int, optional
+                          Temperature limit (in °C) for each motor.
+
+      Returns
+      -------
+      bool
+          Whether or not you should let the robot cool down
+
+
+   .. method:: wait_for_cooldown(self, rest_position, goto_rest_duration=5, lower_temperature=45)
+
+
+      Wait for the robot to lower its temperature.
+
+      The robot will first go to the specified rest position and then, it will turn all motors compliant.
+      Finally, it will wait until the temperature of each motor goes below the lower_temperature parameters.
+
+      .. note:: The robot will stay compliant at the end of the function call.
+                It is up to you, to put it back in the desired position.
+
+      Parameters
+      ----------
+      rest_position: dict
+                     the desired rest position for the robot
+      goto_rest_duration: float
+                          time in seconds to reach the rest position
+      lower_temeprature: int
+                         lower temperature threshold (in °C) to be reached by all motors before the end of cool down
+
+
+

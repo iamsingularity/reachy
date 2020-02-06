@@ -1,0 +1,31 @@
+:mod:`reachy.trajectory.recorder`
+=================================
+
+.. py:module:: reachy.trajectory.recorder
+
+
+Module Contents
+---------------
+
+.. py:class:: TrajectoryRecorder(motors, position_field='present_position', freq=100)
+
+   Bases: :class:`object`
+
+   .. method:: start(self, turn_compliant=False)
+
+
+
+   .. method:: stop(self, turn_stiff=False)
+
+
+
+   .. method:: trajectories(self)
+      :property:
+
+
+
+   .. method:: _record_loop(self)
+
+
+
+

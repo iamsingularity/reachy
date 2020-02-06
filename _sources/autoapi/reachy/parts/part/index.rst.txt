@@ -1,0 +1,30 @@
+:mod:`reachy.parts.part`
+========================
+
+.. py:module:: reachy.parts.part
+
+
+Module Contents
+---------------
+
+.. py:class:: ReachyPart(name)
+
+   Bases: :class:`object`
+
+   .. method:: teardown(self)
+
+
+
+   .. method:: attach_dxl_motors(self, luos_io, dxl_motors)
+
+
+
+   .. method:: create_orbita_actuator(self, name, luos_io, config)
+
+
+
+   .. method:: attach_kinematic_chain(self, dxl_motors)
+
+
+
+

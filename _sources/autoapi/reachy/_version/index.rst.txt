@@ -1,0 +1,14 @@
+:mod:`reachy._version`
+======================
+
+.. py:module:: reachy._version
+
+
+Module Contents
+---------------
+
+.. data:: __version__
+   :annotation: = 1.0.0a1
+
+   
+

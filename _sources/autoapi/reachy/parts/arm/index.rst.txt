@@ -1,0 +1,51 @@
+:mod:`reachy.parts.arm`
+=======================
+
+.. py:module:: reachy.parts.arm
+
+
+Module Contents
+---------------
+
+.. data:: hands
+   
+
+   
+
+.. py:class:: Arm(side, luos_port, dxl_motors, hand)
+
+   Bases: :class:`reachy.parts.part.ReachyPart`
+
+   .. method:: teardown(self)
+
+
+
+   .. method:: forward_kinematics(self, joints_position, use_rad=False)
+
+
+
+   .. method:: inverse_kinematics(self, target_pose, q0=None, use_rad=False)
+
+
+
+
+.. py:class:: LeftArm(luos_port, hand=None)
+
+   Bases: :class:`reachy.parts.arm.Arm`
+
+   .. attribute:: dxl_motors
+      
+
+      
+
+
+.. py:class:: RightArm(luos_port, hand=None)
+
+   Bases: :class:`reachy.parts.arm.Arm`
+
+   .. attribute:: dxl_motors
+      
+
+      
+
+

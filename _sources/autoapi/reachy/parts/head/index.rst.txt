@@ -1,0 +1,53 @@
+:mod:`reachy.parts.head`
+========================
+
+.. py:module:: reachy.parts.head
+
+
+Module Contents
+---------------
+
+.. function:: rot(axis, deg)
+
+
+.. py:class:: Head(camera_id, luos_port)
+
+   Bases: :class:`reachy.parts.part.ReachyPart`
+
+   .. attribute:: orbita_config
+      
+
+      
+
+   .. attribute:: dxl_motors
+      
+
+      
+
+   .. method:: teardown(self)
+
+
+
+   .. method:: look_at(self, x, y, z, duration, wait)
+
+
+
+   .. method:: compliant(self)
+      :property:
+
+
+
+   .. method:: moving_speed(self)
+      :property:
+
+
+
+   .. method:: homing(self)
+
+
+
+   .. method:: get_image(self)
+
+
+
+

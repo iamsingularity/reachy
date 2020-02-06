@@ -1,0 +1,26 @@
+:mod:`reachy.utils.vision`
+==========================
+
+.. py:module:: reachy.utils.vision
+
+
+Module Contents
+---------------
+
+.. py:class:: BackgroundVideoCapture(camera_index, resolution=(720, 960))
+
+   Bases: :class:`object`
+
+   .. method:: close(self)
+
+
+
+   .. method:: _read_loop(self)
+
+
+
+   .. method:: read(self)
+
+
+
+

@@ -1,0 +1,109 @@
+:mod:`reachy.parts.motor`
+=========================
+
+.. py:module:: reachy.parts.motor
+
+
+Module Contents
+---------------
+
+.. py:class:: DynamixelMotor(root_part, name, luos_motor, config)
+
+   Bases: :class:`object`
+
+   .. method:: __repr__(self)
+
+
+
+   .. method:: name(self)
+      :property:
+
+
+
+   .. method:: present_position(self)
+      :property:
+
+
+
+   .. method:: goal_position(self)
+      :property:
+
+
+
+   .. method:: offset(self)
+      :property:
+
+
+
+   .. method:: is_direct(self)
+
+
+
+   .. method:: _as_local_pos(self, pos)
+
+
+
+   .. method:: _to_motor_pos(self, pos)
+
+
+
+   .. method:: moving_speed(self)
+      :property:
+
+
+
+   .. method:: compliant(self)
+      :property:
+
+
+
+   .. method:: torque_limit(self)
+      :property:
+
+
+
+   .. method:: temperature(self)
+      :property:
+
+
+
+   .. method:: goto(self, goal_position, duration, starting_point='present_position', wait=False, interpolation_mode='linear')
+
+
+
+
+.. py:class:: OrbitaActuator(root_part, name, luos_disks_motor, Pc_z, Cp_z, R, R0, pid, reduction, wheel_size, encoder_res)
+
+   Bases: :class:`object`
+
+   .. method:: disks(self)
+      :property:
+
+
+
+   .. method:: compliant(self)
+      :property:
+
+
+
+   .. method:: goto(self, thetas, duration, wait, interpolation_mode='linear')
+
+
+
+   .. method:: point_at(self, vector, angle, duration, wait)
+
+
+
+   .. method:: orient(self, quat, duration, wait)
+
+
+
+   .. method:: setup(self, pid, reduction, wheel_size, encoder_res)
+
+
+
+   .. method:: homing(self, limit_pos=-270, target_pos=102)
+
+
+
+

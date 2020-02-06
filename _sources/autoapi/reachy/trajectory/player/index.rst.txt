@@ -1,0 +1,26 @@
+:mod:`reachy.trajectory.player`
+===============================
+
+.. py:module:: reachy.trajectory.player
+
+
+Module Contents
+---------------
+
+.. py:class:: TrajectoryPlayer(reachy, trajectories, freq=100)
+
+   Bases: :class:`object`
+
+   .. method:: play(self, wait=False, fade_in_duration=0)
+
+
+
+   .. method:: wait_for_end(self)
+
+
+
+   .. method:: _play_loop(self)
+
+
+
+

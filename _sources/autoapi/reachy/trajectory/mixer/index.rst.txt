@@ -1,0 +1,24 @@
+:mod:`reachy.trajectory.mixer`
+==============================
+
+.. py:module:: reachy.trajectory.mixer
+
+
+Module Contents
+---------------
+
+.. function:: sigmoid(x)
+
+
+.. function:: norm_sigmoid(n, r)
+
+
+.. function:: _combine(m1, m2, overlap, r)
+
+
+.. function:: traj_as_array(traj)
+
+
+.. function:: combine(*trajs, overlap=0.1, r=5)
+
+

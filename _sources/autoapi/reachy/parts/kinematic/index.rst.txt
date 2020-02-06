@@ -1,0 +1,47 @@
+:mod:`reachy.parts.kinematic`
+=============================
+
+.. py:module:: reachy.parts.kinematic
+
+
+Module Contents
+---------------
+
+.. py:class:: Link(translation, rotation)
+
+   Bases: :class:`object`
+
+   .. method:: transformation_matrix(self, theta)
+
+
+
+
+.. py:class:: Chain(links)
+
+   Bases: :class:`object`
+
+   .. method:: forward(self, joints)
+
+
+
+   .. method:: inverse(self, poses, q0s)
+
+
+
+   .. method:: _inverse(self, target, q0)
+
+
+
+
+.. function:: translation_matrix(translation)
+
+
+.. function:: position_dist(P, Q)
+
+
+.. function:: rotation_dist(P, Q)
+
+
+.. function:: pose_dist(M1, M2, threshold=-1)
+
+

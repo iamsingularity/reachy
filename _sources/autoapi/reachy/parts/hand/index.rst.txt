@@ -1,0 +1,59 @@
+:mod:`reachy.parts.hand`
+========================
+
+.. py:module:: reachy.parts.hand
+
+
+Module Contents
+---------------
+
+.. function:: rot(axis, deg)
+
+
+.. py:class:: Hand(side)
+
+   Bases: :class:`reachy.parts.part.ReachyPart`
+
+
+.. py:class:: ForceGripper(luos_port, side)
+
+   Bases: :class:`reachy.parts.hand.Hand`
+
+   .. attribute:: dxl_motors
+      
+
+      
+
+   .. method:: open(self, end_pos=-30, duration=1)
+
+
+
+   .. method:: close(self, end_pos=30, duration=1, target_grip_force=100)
+
+
+
+   .. method:: grip_force(self)
+      :property:
+
+
+
+
+.. py:class:: OrbitaWrist(luos_port, side)
+
+   Bases: :class:`reachy.parts.hand.Hand`
+
+   .. attribute:: dxl_motors
+      
+
+      
+
+   .. attribute:: orbita_config
+      
+
+      
+
+   .. method:: homing(self)
+
+
+
+
